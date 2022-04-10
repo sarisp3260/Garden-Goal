@@ -1,0 +1,20 @@
+/* ./src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply py-2 px-4 bg-primary text-white font-semibold rounded-full shadow-md hover:bg-blueDark text-lg 2xl:text-xl focus:outline-none focus:ring-2 focus:ring-purple focus:ring-opacity-75;
+    }
+    .btn-purple {
+      @apply py-2 px-4 bg-purple text-primary font-semibold rounded-full shadow-md hover:bg-blueDark hover:text-white text-lg 2xl:text-xl focus:outline-none focus:ring-2 focus:ring-purple focus:ring-opacity-75;
+    }
+    .btn-dark {
+      @apply py-2 px-4 bg-blueDark text-white font-semibold rounded-full shadow-md hover:bg-white hover:text-primary text-lg 2xl:text-xl focus:outline-none focus:ring-2 focus:ring-purple focus:ring-opacity-75;
+    }
+    .btn-white {
+      @apply py-2 px-4 bg-white text-primary font-semibold rounded-full shadow-md hover:bg-blueDark hover:text-white text-lg 2xl:text-xl focus:outline-none focus:ring-2 focus:ring-purple focus:ring-opacity-75;
+    }
+  }
