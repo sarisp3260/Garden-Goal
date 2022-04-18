@@ -1,6 +1,6 @@
 import {FaUserCircle, FaQuestion, FaSignInAlt, FaTrophy, FaStore, FaBook, FaUsers,FaAngleDown, FaAngleUp, } from 'react-icons/fa'
 import {BsGearFill} from 'react-icons/bs'
-import logo from '../../assets/Logo/GG-LOGO-LIGHT.png'
+import logo from '../../assets/Logo/GG-LOGO-DARK.png'
 
 import { useState } from 'react'
 import Item from './item'
