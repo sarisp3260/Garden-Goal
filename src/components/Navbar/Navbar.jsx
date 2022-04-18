@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
-
-export const Navbar = () => {
+import { HashLink } from "react-router-hash-link";
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-white lg:flex">
+    <nav className="bg-white lg:flex w-screen ">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center  justify-around">
@@ -14,28 +14,35 @@ export const Navbar = () => {
             </span>
             <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a
-                  href="!#"
-                  className="text-blueDark px-3 py-2 rounded-md text-2xl font-medium font-bold"
+                <HashLink
+                  smooth
+                  to="#about"
+                  className="text-blueDark px-3 py-2 rounded-md text-2xl  font-bold"
                 >
                   About
-                </a>
-                <a
-                  href="!#"
-                  className="text-blueDark px-3 py-2 rounded-md text-2xl font-medium font-bold"
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="#contacts"
+                  className="text-blueDark px-3 py-2 rounded-md text-2xl  font-bold"
                 >
-                  Contacts
-                </a>
+                  Contact
+                </HashLink>
 
-                <a
-                  href="!#"
-                  className="text-blueDark px-3 py-2 rounded-md text-2xl font-medium font-bold"
+                <HashLink
+                  smooth
+                  to="#credits"
+                  className="text-blueDark px-3 py-2 rounded-md text-2xl font-bold"
                 >
                   Credits
-                </a>
+                </HashLink>
                 <div className="flex gap-4">
-                  <button className='btn-primary'>Log in</button>
-                  <button className='btn-purple'>Sign up</button>
+                  <HashLink smooth to="/login" className="btn-primary">
+                    Log in
+                  </HashLink>
+                  <HashLink smooth to="/signup" className="btn-purple">
+                    Sign up
+                  </HashLink>
                 </div>
               </div>
             </div>
@@ -102,30 +109,45 @@ export const Navbar = () => {
               ref={ref}
               className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex-col "
             >
-              <a
-                href="!#"
-                className="text-blueDark font-bold hover:bg-purple  block px-3 py-2 text-center rounded-md text-base font-medium"
+              <HashLink
+                smooth
+                to="#about"
+                className="text-blueDark  hover:bg-purple  block px-3 py-2 text-center rounded-md text-base font-medium"
               >
                 About
-              </a>
+              </HashLink>
 
-              <a
-                href="!#"
-                className="text-blueDark font-bold hover:bg-purple  block px-3 py-2 text-center rounded-md text-base font-medium"
+              <HashLink
+                smooth
+                to="#contacts"
+                className="text-blueDark  hover:bg-purple  block px-3 py-2 text-center rounded-md text-base font-medium"
               >
-                Contacts
-              </a>
+                Contact
+              </HashLink>
 
-              <a
-                href="!#"
-                className="text-blueDark font-bold hover:bg-purple  block px-3 py-2 text-center rounded-md text-base font-medium"
+              <HashLink
+                smooth
+                to="#credits"
+                className="text-blueDark hover:bg-purple  block px-3 py-2 text-center rounded-md text-base font-medium"
               >
                 Credits
-              </a>
+              </HashLink>
 
               <div className="flex flex-col w-1/2 justify-center mx-auto gap-4">
-                <button className='btn-primary'>Log in</button>
-                <button className='btn-purple'>Sign up</button>
+                <HashLink
+                  smooth
+                  to="/login"
+                  className="btn-primary text-center"
+                >
+                  Log in
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/signup"
+                  className="btn-purple text-center"
+                >
+                  Sign up
+                </HashLink>
               </div>
             </div>
           </div>
@@ -134,3 +156,4 @@ export const Navbar = () => {
     </nav>
   );
 };
+export default Navbar;
