@@ -3,7 +3,7 @@ import About from "./pages/About/About.jsx";
 import LogIn from "./pages/LogIn/LogIn.jsx";
 import SignIn from "./pages/SignIn/SignIn.jsx";
 import {Garden} from "./components/Garden/Garden"
-import {PlantDetail} from "./components/Garden/PlantDetail"
+// import {PlantDetail} from "./components/Garden/PlantDetail"
 function App() {
   return (
     <div className="App">
