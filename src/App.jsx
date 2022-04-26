@@ -2,6 +2,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import About from "./pages/About/About.jsx";
 import LogIn from "./pages/LogIn/LogIn.jsx";
 import SignIn from "./pages/SignIn/SignIn.jsx";
+import {Garden} from "./components/Garden/Garden"
+// import {PlantDetail} from "./components/Garden/PlantDetail"
 function App() {
   return (
     <div className="App relative">
@@ -10,6 +12,8 @@ function App() {
           <Route path="/" element={<About />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignIn />} />
+          <Route path="/:nickname/garden" element={<Garden/>} />
+          {/* <Route path="/plants/:id" element={<PlantDetail/>} /> */}
         </Routes>
       </HashRouter>
     </div>
