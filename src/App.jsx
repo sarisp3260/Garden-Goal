@@ -4,7 +4,7 @@ import LogIn from "./pages/LogIn/LogIn.jsx";
 import SignIn from "./pages/SignIn/SignIn.jsx";
 function App() {
   return (
-    <div className="App">
+    <div className="App relative">
       <HashRouter>
         <Routes>
           <Route path="/" element={<About />} />

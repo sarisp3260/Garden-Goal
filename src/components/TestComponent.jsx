@@ -1,12 +1,10 @@
 import React from 'react'
-import NavUser from './UserMenu/NavUser'
-import Profile from './UserMenu/Profile'
+import Friends from '../pages/Friends'
 
 function TestComponent() {
   return (
     <>
-      <NavUser/>
-      <Profile/>
+      <Friends/>
     </>
   )
 }
