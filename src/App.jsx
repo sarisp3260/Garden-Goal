@@ -8,7 +8,7 @@ import SignIn from "./pages/SignIn.jsx";
 
 function App() {
   return (
-    <div className="App relative">
+    <div className="App w-full relative">
       <HashRouter>
         <Routes>
           <Route path="/" element={<LandingAbout />} />
