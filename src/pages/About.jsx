@@ -1,12 +1,11 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import Navbar from "../../components/Navbar/Navbar.jsx";
-import Carousel from "./Carousel/Carousel.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
+import Navbar from "../components/Navbar/Navbar.jsx";
+import Carousel from "../components/Carousel/Carousel.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 import { BsFacebook, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
-import CarouselCard from "./Carousel/CarouselCard";
-import "./About.css";
-import "./Carousel/Carousel.css";
+import CarouselCard from "../components//Carousel/CarouselCard";
+import "../components/Carousel/Carousel.css";
 import { CgProfile } from "react-icons/cg";
 const About = () => {
   const team = [
@@ -77,8 +76,10 @@ const About = () => {
         </div>
       </section>
       <section id="contacts">
-        <h2 className="text-2xl font-extrabold sm:text-3xl  text-blueDark decorated">
-          <span>Contact</span>
+        <h2 className="text-2xl font-extrabold sm:text-3xl  text-blueDark overflow-hidden text-center">
+          <span className="relative inline-block before:absolute before:top-2/4 before:border-y-2 before:border-blueDark before:w-screen after:mx-8 after:my-0 after:right-full after:absolute after:top-2/4 after:border-y-2 after:border-blueDark after:w-screen before:mx-8 before:my-0 before:right-full after:left-full">
+            Contact
+          </span>
         </h2>
         <div className="container grid grid-cols-2 place-items-center gap-9 ">
           <a
@@ -103,8 +104,10 @@ const About = () => {
         </div>
       </section>
       <section id="credits">
-        <h2 className="text-2xl font-extrabold sm:text-3xl  text-blueDark decorated">
-          <span>Credits</span>
+        <h2 className="text-2xl font-extrabold sm:text-3xl  text-blueDark overflow-hidden text-center">
+          <span className="relative inline-block before:absolute before:top-2/4 before:border-y-2 before:border-blueDark before:w-screen after:mx-8 after:my-0 after:right-full after:absolute after:top-2/4 after:border-y-2 after:border-blueDark after:w-screen before:mx-8 before:my-0 before:right-full after:left-full">
+            Credits
+          </span>
         </h2>
         <div className="carousel-container">
           <Carousel activeIndex={activeIndex} setActiveIndex={setActiveIndex}>
