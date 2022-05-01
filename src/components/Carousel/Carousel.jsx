@@ -28,6 +28,7 @@ const Carousel = ({ activeIndex, setActiveIndex, children }) => {
       <div className="dots">
         {children.map((child, i) => (
           <button
+            key={i}
             className={`dot ${activeIndex === i ? "active" : ""}`}
             onClick={() => setActiveIndex(i)}
           />
