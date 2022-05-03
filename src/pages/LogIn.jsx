@@ -1,4 +1,4 @@
-import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 import planta from '../assets/plantaLog.svg'
 import AuthForm from '../components/Forms/AuthForm'
 import GGwhite from '../assets/GGwhite.svg'
@@ -7,8 +7,12 @@ const LogIn = () => {
     return (
         <div className='min-h-screen bg-[#1B2B43]'>
             <div className='m-auto p-6 w-5/6 flex justify-between items-center'>
-                <h1 className='text-5xl font-bold monserrat text-white'>Garden Goal</h1>
-                <button className='btn-white'>Sing Up</button>
+                <HashLink smooth to="/">
+                    <h1 className='text-5xl font-bold monserrat text-white'>Garden Goal</h1>
+                </HashLink>
+                <HashLink smooth to="/signup" className="btn-white duration-300 hover:bg-primary">
+                    Sign up
+                </HashLink>
             </div>
             <div className='flex m-auto w-11/12 items-center'>
                 <div className='w-2/4'>

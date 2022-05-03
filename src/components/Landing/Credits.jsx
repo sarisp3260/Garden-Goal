@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { CgProfile } from "react-icons/cg";
-import Carousel from "../components/Carousel/Carousel.jsx";
-import CarouselCard from "../components//Carousel/CarouselCard";
-import "../components/Carousel/Carousel.css";
+import Carousel from "../Carousel/Carousel";
+import CarouselCard from "../Carousel/CarouselCard";
+import "../Carousel/Carousel.css";
 
 export const Credits = () => {
   const [activeIndex, setActiveIndex] = useState(0);
