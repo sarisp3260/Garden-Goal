@@ -1,6 +1,6 @@
 import React from 'react'
-import CardFriend from '../components/CardFriend'
-import ConfigSearcher from '../components/ConfigSearcher'
+import CardFriend from '../components/Friends/CardFriend'
+import ConfigSearcher from '../components/Friends/ConfigSearcher'
 
 const Friends = () => {
   return (

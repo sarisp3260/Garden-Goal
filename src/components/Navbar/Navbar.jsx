@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { HashLink } from "react-router-hash-link";
-const Navbar = () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="bg-white lg:flex w-screen ">
@@ -156,4 +156,3 @@ const Navbar = () => {
     </nav>
   );
 };
-export default Navbar;

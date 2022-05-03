@@ -1,6 +1,6 @@
 import { FaRegStar, FaStar }from 'react-icons/fa'
 import { useState } from 'react'
-import logo from '../assets/Logo/GG-LOGO-LIGHT.png'
+import logo from '../../assets/Logo/GG-LOGO-LIGHT.png'
 
 const CardFriend = () => {
 

@@ -1,19 +1,33 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import About from "./pages/About/About.jsx";
-import LogIn from "./pages/LogIn/LogIn.jsx";
-import SignIn from "./pages/SignIn/SignIn.jsx";
-import {Garden} from "./components/Garden/Garden"
-// import {PlantDetail} from "./components/Garden/PlantDetail"
+import { LandingAbout } from "./pages/LandingAbout.jsx";
+
+import LogIn from "./pages/LogIn";
+import PlantDetail from "./pages/PlantDetail.jsx";
+import SignIn from "./pages/SignIn.jsx";
+
+import SectionLayout from "./layouts/SectionLayout.jsx";
+import { Garden } from "./components/Garden/Garden";
+import Friends from './pages/Friends'
+
 function App() {
   return (
-    <div className="App relative">
+    <div className="App w-full relative">
       <HashRouter>
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<LandingAbout />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignIn />} />
-          <Route path="/:nickname/garden" element={<Garden/>} />
-          {/* <Route path="/plants/:id" element={<PlantDetail/>} /> */}
+
+          {/* outlet */}
+          <Route path="/game" element={<SectionLayout/>}>
+            <Route path="/game/:nickname/garden" element={<Garden/>}/>
+            <Route path="/game/:nickname/friends" element={<Friends/>}/>
+            <Route path="/game/:nickname/collection" element={<Friends/>}/>
+            <Route path="/game/:nickname/store" element={<Friends/>}/>
+            <Route path="/game/:nickname/rewards" element={<Friends/>}/>
+          </Route>
+
+          <Route path="/plants/:id" element={<PlantDetail />} />
         </Routes>
       </HashRouter>
     </div>
