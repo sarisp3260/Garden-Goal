@@ -2,12 +2,16 @@ import React from 'react'
 
 const AuthForm = () => {
     return (
-        <form style={{height: '40vh'}} className='m-auto flex flex-col items-center justify-around bg-[#B4A4FC16] w-3/5 rounded-3xl'>
-            <h1 className='text-white'>Log in</h1>
-            <input className='text-white text-center w-9/12 rounded-3xl p-2 border-0 bg-[#ffffff20]' type="text" placeholder='Username'/>
-            <input className='text-white text-center w-9/12 rounded-3xl p-2 border-0 bg-[#ffffff20]' type="text" placeholder='Password'/>
-            <button style={{padding: '.3rem 1.5rem .3rem 1.5rem'}} className='rounded-3xl text-[#1B2B43] bg-white border-0'>Go {`>>`}</button>
-            <b className='text-white'>Forgot your password?</b>
+        <form className='m-auto h-auto flex flex-col gap-5 py-5 items-center justify-around bg-[#B4A4FC16] w-full md:w-3/5 rounded-3xl'>
+            <h1 className='text-white text-xl font-semibold'>Log in</h1>
+            
+            <div className='flex flex-col gap-5 w-10/12'>
+                <input className='input-border' type="text" placeholder='Username'/>
+                <input className='input-border' type="text" placeholder='Password'/>
+            </div>
+
+            <button className='btn-white text-black hover:bg-white/70 hover:text-black'>Go {`>>`}</button>
+            <b className='text-white text-center'>Forgot your password?</b>
         </form>
     )
 }

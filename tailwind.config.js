@@ -19,10 +19,15 @@ module.exports = {
         primary: "#6951EB",
         blueDark: "#1B2B43",
         white: "#F9F2F5",
+        ligthGray: "#1b2b431a",
       },
 
       fontFamily: {
         'montserrat': ['"Montserrat"']
+      },
+
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
     },
   },

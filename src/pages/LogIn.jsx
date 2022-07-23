@@ -5,26 +5,26 @@ import GGwhite from '../assets/GGwhite.svg'
 
 const LogIn = () => {
     return (
-        <div className='min-h-screen bg-[#1B2B43]'>
-            <div className='m-auto p-6 w-5/6 flex justify-between items-center'>
+        <div className='min-h-screen flex flex-col justify-between bg-blueDark'>
+            <div className='p-6 flex justify-between items-center'>
                 <HashLink smooth to="/">
-                    <h1 className='text-5xl font-bold monserrat text-white'>Garden Goal</h1>
+                    <h1 className='text-2xl font-bold monserrat text-white md:text-5xl'>Garden Goal</h1>
                 </HashLink>
                 <HashLink smooth to="/signup" className="btn-white duration-300 hover:bg-primary">
                     Sign up
                 </HashLink>
             </div>
-            <div className='flex m-auto w-11/12 items-center'>
-                <div className='w-2/4'>
-                    <img className='w-5/12 m-auto' src={planta} alt="" />
+            <div className='flex flex-col m-auto w-11/12 items-center md:flex-row gap-10 md:gap-0'>
+                <div className='w-full md:w-2/4'>
+                    <img className='w-3/12 md:w-5/12 m-auto' src={planta} alt="" />
                 </div>
-                <div className='w-2/4'>
+                <div className='w-full md:w-2/4'>
                     <AuthForm/>
                 </div>
             </div>
-            <h3 className='w-full text-center absolute bottom-2 text-xl font-bold monserrat text-white'>© Garden Goal, 2022</h3>
-            <div className='absolute right-5 bottom-0'>
-                <img src={GGwhite} alt="GG" />
+            <h3 className='w-full text-center text-xl p-6 font-bold monserrat text-white'>© Garden Goal, 2022</h3>
+            <div className='hidden xs:block absolute right-5 bottom-0'>
+                <img src={GGwhite} alt="GG" className='w-10/12'/>
             </div>
         </div>        
     )

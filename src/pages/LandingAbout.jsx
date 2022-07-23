@@ -10,8 +10,8 @@ export const LandingAbout = () => {
     <>
       <Navbar />
       <About />
-      <Contact />
       <Credits />
+      <Contact />
       <Footer />
     </>
   );
