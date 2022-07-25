@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { LandingAbout } from "./pages/LandingAbout.jsx";
+import Landing from "./pages/Landing";
 
 import LogIn from "./pages/LogIn";
 import PlantDetail from "./pages/PlantDetail.jsx";
@@ -14,7 +14,7 @@ function App() {
     <div className="App w-full relative">
       <HashRouter>
         <Routes>
-          <Route path="/" element={<LandingAbout />} />
+          <Route path="/" element={<Landing/>} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignIn />} />
 

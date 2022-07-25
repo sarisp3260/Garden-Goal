@@ -4,6 +4,30 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar{
+  width: 8px;
+}
+body::-webkit-scrollbar-track{
+  background-color:  #B4A4FC;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #6951EB;
+  border-radius: 10px;
+}
+
+#scroll::-webkit-scrollbar{
+  width: 0px;
+}
+#scroll::-webkit-scrollbar-track{
+  background-color:  transparent;
+  border-radius: 0px;
+}
+#scroll::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 0px;
+}
+
 @layer components {
     .btn-primary {
       @apply py-2 px-4 bg-primary text-white font-semibold rounded-full shadow-md hover:bg-blueDark text-base 2xl:text-lg focus:outline-none focus:ring-2 focus:ring-purple focus:ring-opacity-75;

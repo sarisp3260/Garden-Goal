@@ -1,13 +1,15 @@
 import React from "react";
 import { BsFacebook, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
+import {MdOutlineTagFaces} from "react-icons/md";
+
 export const Contact = () => {
   return (
-    <section id="contacts" className="px-5 md:px-10">
-      <h2 className="text-2xl font-extrabold sm:text-3xl  text-blueDark overflow-hidden text-center">
-        <span className="relative inline-block before:absolute before:top-2/4 before:border-y-2 before:border-blueDark before:w-screen after:mx-8 after:my-0 after:right-full after:absolute after:top-2/4 after:border-y-2 after:border-blueDark after:w-screen before:mx-8 before:my-0 before:right-full after:left-full">
+    <section id="contacts" className="px-5 md:px-10 py-10">
+      
+      <div className="flex justify-center items-center gap-3 uppercase text-3xl my-5 font-extrabold sm:text-4xl text-blueDark">
           Contact
-        </span>
-      </h2>
+          <MdOutlineTagFaces />
+      </div>
 
 
       <div className="grid grid-cols-2 place-items-center gap-20 py-20 ">

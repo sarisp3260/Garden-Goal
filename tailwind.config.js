@@ -28,7 +28,12 @@ module.exports = {
 
       animation: {
         'spin-slow': 'spin 3s linear infinite',
+      },
+
+      backgroundImage: {
+        'base': "url('../../assets/Landing/Base.svg')",
       }
+
     },
   },
   plugins: [],
