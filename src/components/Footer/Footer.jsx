@@ -8,8 +8,8 @@ function Footer() {
   return (
     <footer className='bg-blueDark px-5 md:px-10'>
         <div className="footer-list text-white flex flex-wrap items-center justify-center gap-5 md:justify-between py-8">
-            <div className="logo">
-                <img src={LogoWhite} className='w-36' alt="" />
+            <div className="logo px-5">
+                <img src={LogoWhite} className='w-40' alt="" />
             </div>
             <div className="item-list ">
                 <h2 className='text-xl font-bold sm:text-2xl'>Lorem ipsum dolor</h2>

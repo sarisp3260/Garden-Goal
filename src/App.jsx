@@ -1,5 +1,6 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
+import {LandingAbout} from "./pages/LandingAbout";
 
 import LogIn from "./pages/LogIn";
 import PlantDetail from "./pages/PlantDetail.jsx";
@@ -15,6 +16,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<Landing/>} />
+          <Route path="/about" element={<LandingAbout/>} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/signup" element={<SignIn />} />
 

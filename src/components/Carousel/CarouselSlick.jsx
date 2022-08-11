@@ -57,7 +57,7 @@ const CarouselSlick = () => {
     beforeChange: (current, next) => setActiveIndex(next),
     responsive: [
         {
-          breakpoint: 640,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,

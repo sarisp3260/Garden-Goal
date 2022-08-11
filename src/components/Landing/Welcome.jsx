@@ -7,11 +7,11 @@ import {MdDoubleArrow} from 'react-icons/md'
 const Welcome = () => {
   return (
     <div className='relative bg-white select-none'>
-        <MainLayout>
+        <MainLayout stylos="min-h-fit h-max md:min-h-screen">
 
-            <div className='flex flex-col gap-5 items-center justify-center'>
+            <div className='h-96 flex flex-col gap-5 items-center justify-center'>
 
-                <h1 className='font-bold text-5xl lg:text-8xl'>Wellcome</h1>
+                <h1 className='font-bold text-5xl lg:text-8xl'>Welcome</h1>
                 <img className='w-24 md:w-32' src={Waterman} alt="" />
 
             </div>
