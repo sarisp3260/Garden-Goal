@@ -1,22 +1,29 @@
-import React, { useState } from 'react'
-import { HashLink } from 'react-router-hash-link'
+import React, { useState, useEffect } from 'react'
 import { FaUserCircle, FaAngleDown, FaAngleUp, FaBars } from 'react-icons/fa'
 
 import ItemNav from './ItemNav'
+import { Link, useLocation } from 'react-router-dom'
 
 
 const NavUser = () => {
 
     const [open, setOpen] = useState(false)
 
+    const location = useLocation()
+
+    useEffect(() => {
+        setOpen(false)
+    }, [location]);
+    
+
     return (
         <>
-            <nav className='w-full bg-blueDark text-white py-5 px-5 flex justify-end relative gap-6'>
+            <nav className='w-full bg-blueDark text-white py-5 px-5 flex justify-end relative gap-6 select-none'>
                 <div className="cont-nav flex justify-between items-center w-full md:w-4/6">
 
-                    <HashLink smooth to="/">
+                    <Link smooth to="/">
                         <h1 className='text-3xl font-bold'>Garden Goal</h1>
-                    </HashLink>
+                    </Link>
 
                     <div className="hidden icons md:flex">
                         <FaUserCircle className='text-4xl' />

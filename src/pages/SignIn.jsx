@@ -1,4 +1,4 @@
-import { HashLink } from 'react-router-hash-link'
+import { Link } from 'react-router-dom'
 import plantaSing from '../assets/plantaSingin.svg'
 import RegisterForm from '../components/Forms/RegisterForm'
 import GGdark from '../assets/GGdark.svg'
@@ -7,12 +7,12 @@ export const SignIn = () => {
     return (
         <div className='min-h-screen flex flex-col justify-between bg-white'>
             <div className='p-6 flex justify-between items-center'>
-                <HashLink smooth to="/">
+                <Link smooth to="/">
                     <h1 className='text-2xl font-bold monserrat text-blueDark md:text-5xl'>Garden Goal</h1>
-                </HashLink>
-                <HashLink smooth to="/login" className="btn-purple duration-300">
+                </Link>
+                <Link smooth to="/login" className="btn-purple duration-300">
                     Log in
-                </HashLink>
+                </Link>
             </div>
             <div className='flex flex-col m-auto w-11/12 items-center md:flex-row gap-10 md:gap-0'>
                 <div className='w-full md:w-2/4'>

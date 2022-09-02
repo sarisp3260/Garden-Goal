@@ -14,7 +14,7 @@ const ModalLayout = ({ children , title, openModal, setOpenModal}) => {
   return (
     <>
       {openModal &&
-      <div className='min-h-screen h-full w-full bg-blueDark/20 backdrop-blur-md absolute top-0 z-40'>
+      <div className='min-h-screen h-full w-11/12 bg-blueDark/20 backdrop-blur-md absolute top-0 z-40'>
         <div className="h-screen w-full flex items-center justify-center">
           <div className="modal bg-purple/90 w-full h-fit rounded-lg p-5 md:w-fit">
               <div className="header w-full flex justify-between">

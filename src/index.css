@@ -53,4 +53,7 @@ body::-webkit-scrollbar-thumb{
     .label-form{
       @apply pb-2 text-lg font-semi-bold md:text-2x;
     }
+    .select{
+      @apply py-1.5 px-4 bg-white text-blueDark font-semibold rounded-xl shadow-md text-base 2xl:text-lg border-none focus:outline-none focus:ring-0;
+    }
   }

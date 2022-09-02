@@ -1,8 +1,11 @@
 import React, {useState} from "react";
 import { useForm } from "react-hook-form";
 import { RiEyeCloseLine, RiEyeFill, RiPlantLine} from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 const AuthForm = () => {
+
+  const navigate = useNavigate();
 
   const [showPassword, setShowPassword] = useState(false);
 
@@ -16,8 +19,9 @@ const AuthForm = () => {
   const passwordWatch = watch("password");
 
   const onSubmit = (data) => {
-    console.log(data);
-    alert(data.username, data.password);
+    localStorage.setItem("login", true)
+    console.log("Ingreso con exito");
+    navigate(`/game/${data.username}/garden`)
   };
 
   return (
@@ -69,7 +73,7 @@ const AuthForm = () => {
       <button className="btn-white flex items-center gap-3 text-black hover:bg-white/70 hover:text-black">
         Go <RiPlantLine/>
       </button>
-      <p className="text-white text-center">Forgot your password?</p>
+      <a href="!/" className="text-white text-center hover:text-purple duration-700">Forgot your password?</a>
     </form>
   );
 };
