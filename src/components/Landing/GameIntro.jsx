@@ -3,7 +3,7 @@ import React from "react";
 const GameIntro = () => {
   return (
     <>
-      <div className="bg-purple grid place-items-center grid-cols-1 py-5 px-5 md:px-10 md:grid-cols-2 text-white font-montserrat">
+      <div className="bg-purple grid place-items-center grid-cols-1 py-10 px-5 md:px-10 md:grid-cols-2 text-white font-montserrat">
 				<picture className="w-1/2">
 					<img src="https://dsm01pap007files.storage.live.com/y4mB-akb9m5aHTJe27ZqkjD2R23jc6VlgeRjjzaBQxe3GDwQGoIwnxk7hBa7OTGEXc7VDtLdPEaOsczDawHL9KK0M0M1_iCH1LH9fyWblEsrIs4h491Nsy2xDo_f3_zuQ21eKO1pA5s1ikACxDOky4f2ZngFh5J7eYepPTxNgCenBqlj-ebUfVxidriao4sEUqZ?width=495&height=375&cropmode=none" alt="" />
 				</picture>
@@ -17,7 +17,7 @@ const GameIntro = () => {
 				</div>
 			</div>
 
-      <div className="relative grid place-items-center grid-cols-1 py-5 px-5 md:px-10 md:grid-cols-2 text-white font-montserrat" style={{backgroundImage: 'url("https://dsm01pap007files.storage.live.com/y4mlwIrmt4sKsDBo_EY6KhJQwKmkF4g3-agTBoBxfUvyI5aG2DMpQ716FsBjqZOozu1YFrQxZTWMW233ZKXb0UP34KsRbzFJcfk6cnhD9Gw8gTn-tjsbRlm4cvmHcC18wVXZTqcGnqjg-ECE5M0mZgfUabRBUMk9DMWTflH7gt6TskhMkvw44ryrjF-209vWGs_?width=1354&height=471&cropmode=none")'}}>
+      <div className="relative grid place-items-center grid-cols-1 py-10 px-5 md:px-10 md:grid-cols-2 text-white font-montserrat" style={{backgroundImage: 'url("https://dsm01pap007files.storage.live.com/y4mlwIrmt4sKsDBo_EY6KhJQwKmkF4g3-agTBoBxfUvyI5aG2DMpQ716FsBjqZOozu1YFrQxZTWMW233ZKXb0UP34KsRbzFJcfk6cnhD9Gw8gTn-tjsbRlm4cvmHcC18wVXZTqcGnqjg-ECE5M0mZgfUabRBUMk9DMWTflH7gt6TskhMkvw44ryrjF-209vWGs_?width=1354&height=471&cropmode=none")'}}>
 				<div className="absolute inset-0 bg-gradient-to-t from-purple to-primary bg-cover -z-10">
 				</div>
 					<div>

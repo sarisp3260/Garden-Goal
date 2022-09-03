@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFacebook, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import CopyRight from "./CopyRight";
 
 const GreenFooter = () => {
@@ -7,9 +8,9 @@ const GreenFooter = () => {
     <div className="h-max md:min-h-screen flex flex-col justify-between">
       <div className="flex gap-3 flex-wrap items-center justify-center text-center pt-10 md:pt-20">
         <h1 className="text-lg md:text-xl lg:text-2xl font-bold">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, quo.
+          Collect all types of plants and cards while your challenge yourself to learn
         </h1>
-        <button className="btn-primary">Go to garden</button>
+        <Link to="/login" className="btn-primary">Go to garden</Link>
       </div>
 
       <div className="h-2/4">
@@ -30,8 +31,8 @@ const GreenFooter = () => {
             -
           </div>
           <div className="flex flex-wrap items-center justify-around text-center pb-8">
-            <span className="text-xl font-medium px-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span className="text-2xl font-medium px-2">
+              The aim of <strong>Garden Goal</strong> is to help you focus on your goal, so sow your future here.
             </span>
             <div className="flex flex-col items-center gap-4">
               <span className="text-lg font-medium">Social media</span>
@@ -41,16 +42,16 @@ const GreenFooter = () => {
                   target="_blank"
                   className="rounded-full"
                 >
-                  <BsFacebook className="text-3xl hover:scale-110 duration-700 hover:text-primary" />
+                  <BsFacebook className="text-3xl hover:scale-110 duration-700 hover:text-blueDark/80" />
                 </a>
                 <a
                   href="https://www.instagram.com/somoseducamas/"
                   target="_blank"
                 >
-                  <BsInstagram className="text-3xl hover:scale-110 duration-700 hover:text-primary" />
+                  <BsInstagram className="text-3xl hover:scale-110 duration-700 hover:text-blueDark/80" />
                 </a>
                 <a href="https://github.com/programateacademy" target="_blank">
-                  <BsGithub className="text-3xl hover:scale-110 duration-700 hover:text-primary" />
+                  <BsGithub className="text-3xl hover:scale-110 duration-700 hover:text-blueDark/80" />
                 </a>
               </div>
             </div>

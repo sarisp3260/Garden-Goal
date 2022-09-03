@@ -60,7 +60,7 @@ const Itemnav = ({ responsive }) => {
                 <FaQuestion className='text-3xl'/>
             </Item>
             <button onClick={()=>{window.localStorage.removeItem("login")}}>
-                <Item title="Log outttt" url="/" >
+                <Item title="Log out" url="/" >
                     <FaSignInAlt className='text-3xl'/>
                 </Item>
             </button>

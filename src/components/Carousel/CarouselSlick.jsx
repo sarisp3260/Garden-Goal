@@ -12,7 +12,7 @@ const CarouselSlick = () => {
           name: "Moises Ariza",
           role: "Project manager",
           description:
-            "Fullstack Web Development teacher and backend developer.",
+            "Formador en desarrollo Web Fullstack",
           picture: "https://hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1653345063099%2FsSfeqOyy4.jpg%3Fw%3D1000%26h%3D1000%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75",
         },
         {
@@ -55,6 +55,30 @@ const CarouselSlick = () => {
             "I'm a full stack developer with experience in projects especially with scrum methodology.",
           picture: "https://avatars.githubusercontent.com/u/88946723?v=4",
         },
+        {
+          id: 7,
+          name: "Diego Botello",
+          role: "Backend",
+          description:
+            "Mi interés en el desarrollo comenzó desde mi escuela, aprendiondo los conceptos basicos de programacion y creando algorimos sencillos y luego comencé mis sueños de ser un buen desarrollador en el futuro.",
+          picture: "https://avatars.githubusercontent.com/u/47578861?v=4",
+        },
+        {
+          id: 8,
+          name: "Juliana Fajardo",
+          role: "Project Manager",
+          description:
+            "Co-formadora en Educamás ! Desarrolladora Full Stack",
+          picture: "https://avatars.githubusercontent.com/u/44068486?v=4",
+        },
+        {
+          id: 9,
+          name: "Lorena Guerrero",
+          role: "Project Manager",
+          description:
+            "Coordinadora Académica y Formadora en Desarrollo web Full Stack | Desarrolladora Full Stack web | Experta en WordpressTech Lover",
+          picture: "https://media-exp1.licdn.com/dms/image/C5603AQHq-KdpJqUOcA/profile-displayphoto-shrink_100_100/0/1618781550059?e=1667433600&v=beta&t=xa5Vpi3VEF_ZzLaSPdjFjhtXH4U66gvB_shEOGXEaOM",
+        },
       ];
 
     const settings = {
@@ -72,8 +96,8 @@ const CarouselSlick = () => {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             initialSlide: 2
           }
         },
@@ -97,18 +121,17 @@ const CarouselSlick = () => {
                     <div 
                     className="text-white px-5 h-96"
                     key={card.id}>
-                        <div className={`w-full h-full flex flex-col justify-between items-center bg-blueDark rounded-3xl py-12 px-5
-                        ${index === activeIndex  ? "" : "opacity-50 scale-90"}`}>
-                            <div className='flex flex-col items-center gap-3'>
+                        <div className={`w-full h-full flex flex-col justify-between items-center bg-blueDark rounded-3xl py-8 px-4 ${index === activeIndex  ? "" : "opacity-50 scale-90"}`}>
+                            <div className='flex flex-col items-center gap-2'>
                                 <div>
                                     {card.picture !== null ? <img src={card.picture} className='w-28 h-28 rounded-full border-8 border-white'/> : <CgProfile className='text-white' size={120} /> }
                                 </div>
-                                <h2 className="text-2xl md:text-xl font-bold text-white ">
+                                <h2 className="text-2xl md:text-xl text-center font-bold text-white ">
                                     {card.name}
                                 </h2>
                             </div>
-                            <span className='text-base px-5 text-center font-bold'>Role: {card.role}</span>
-                            <p className="italic px-5 text-center">
+                            <span className='text-base px-5 text-center font-bold'>{card.role}</span>
+                            <p className="italic px-5 text-center text-sm md:text-base">
                                 "{card.description}"
                             </p>
                         </div>
