@@ -2,7 +2,7 @@ import {FaUserCircle, FaQuestion, FaSignInAlt, FaTrophy, FaStore, FaBook, FaUser
 import logo from '../../assets/Logo/GG-LOGO-DARK.png'
 
 import { useState } from 'react'
-import Item from './item'
+import Item from './Item'
 
 const Itemnav = ({ responsive }) => {
 
