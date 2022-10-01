@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { CgProfile } from "react-icons/cg";
-import Carousel from "../Carousel/Carousel";
-import CarouselCard from "../Carousel/CarouselCard";
-import "../Carousel/Carousel.css";
+import CarouselSlick from "../Carousel/CarouselSlick";
+
+import {MdSportsHandball} from "react-icons/md";
 
 export const Credits = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -45,28 +45,18 @@ export const Credits = () => {
   ];
   return (
     <section id="credits">
-      <h2 className="text-2xl font-extrabold sm:text-3xl  text-blueDark overflow-hidden text-center">
-        <span className="relative inline-block before:absolute before:top-2/4 before:border-y-2 before:border-blueDark before:w-screen after:mx-8 after:my-0 after:right-full after:absolute after:top-2/4 after:border-y-2 after:border-blueDark after:w-screen before:mx-8 before:my-0 before:right-full after:left-full">
-          Credits
-        </span>
-      </h2>
-      <div className="carousel-container">
-        <Carousel activeIndex={activeIndex} setActiveIndex={setActiveIndex}>
-          {team.map((card, i) => {
-            return (
-              <CarouselCard key={card.id} active={activeIndex === i}>
-                <div className="carousel-card-content">
-                  <div>{card.picture}</div>
-                  <h2 className="text-xl font-bold text-blueDark ">
-                    {card.name}
-                  </h2>
-                  <p className="text-center">{card.description}</p>
-                </div>
-              </CarouselCard>
-            );
-          })}
-        </Carousel>
+      
+      <div className="flex justify-center items-center gap-3 uppercase text-3xl my-5 font-extrabold sm:text-4xl text-blueDark">
+          Credits 
+          <MdSportsHandball />
       </div>
+
+      <div className='w-full my-10 flex justify-center items-center pt-5'>
+        <div className='w-11/12 lg:w-10/12'>
+          <CarouselSlick/>
+        </div>
+      </div>
+
     </section>
   );
 };

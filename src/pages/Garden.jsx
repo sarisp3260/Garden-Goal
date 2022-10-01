@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Plant } from "./Plant";
-import ModalLayout from "../../layouts/ModalLayout";
-
 import { useParams } from "react-router-dom";
-import waterLily from "../../assets/waterLily.svg";
-import { plantsList } from "./plants";
+
+import { Plant } from "../components/Garden/Plant";
+import ModalLayout from "../layouts/ModalLayout";
+import { plantsList } from "../components/Garden/plants";
 
 import { GiCarnivorousPlant } from 'react-icons/gi'
 import { FaSeedling } from 'react-icons/fa'
@@ -26,7 +25,7 @@ export function Garden() {
   }, []
   );
   return (
-    <div className="flex flex-col bg-blueDark min-h-screen w-full relative">
+    <div className="flex flex-col px-5 bg-blueDark min-h-screen w-full relative">
 
 
       <div className="top-garden flex items-center justify-between">

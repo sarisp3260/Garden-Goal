@@ -6,7 +6,7 @@ export function Plant({ data }) {
   const id = params.id;
   return (
     <div className="flex flex-col h-52 lg:h-64 relative m-10">
-      <Link to={`/plants/${id}`}>
+      <Link to={`/plants/${data.name}`}>
         <div className="flex justify-center h-44 lg:h-56">
           <img
             className=" z-10 max-h-full h-auto"
